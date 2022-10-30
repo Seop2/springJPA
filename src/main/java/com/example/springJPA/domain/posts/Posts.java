@@ -11,7 +11,7 @@ import javax.persistence.*;
 //Entity 클래스에서는 절대 setter메소드를 만들지 않는다
 //차후 기능 변경시 복잡해짐
 @NoArgsConstructor//기본 생성자 자동추가
-public class Posts {
+public class Posts extends BaseTimeEntity{
     @Id//pk
     @GeneratedValue(strategy = GenerationType.IDENTITY)//auto_increment 설정
     private Long id;//왠만하면 Long타입
